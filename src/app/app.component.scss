@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+    padding: 20px;
+  }
+  
+  .router-outlet {
+    height: auto; /* Ensures that map doesn't stretch unnecessarily */
+  }
+  

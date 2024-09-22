@@ -1,0 +1,23 @@
+<form [formGroup]="reportForm" (ngSubmit)="onSubmit()">
+  <label for="title">Title</label>
+  <input id="title" formControlName="title" />
+
+  <label for="description">Description</label>
+  <textarea id="description" formControlName="description"></textarea>
+
+  <label for="category">Category</label>
+  <select id="category" formControlName="category">
+    <option value="road">Road Issue</option>
+    <option value="waste">Waste Management</option>
+    <option value="infrastructure">Infrastructure</option>
+    <!-- Add more categories as needed -->
+  </select>
+
+  <label for="images">Images</label>
+  <input type="file" (change)="onFileChange($event)" multiple />
+
+  <label for="geolocation">Geolocation (optional)</label>
+  <input id="geolocation" formControlName="geolocation" />
+
+  <button type="submit" [disabled]="!reportForm.valid">Submit Report</button>
+</form>

@@ -1,0 +1,61 @@
+.register-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .form-group {
+      margin-bottom: 1.5rem;
+  
+      label {
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+  
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+  
+        &.is-invalid {
+          border-color: red;
+        }
+      }
+  
+      .invalid-feedback {
+        color: red;
+        font-size: 0.875rem;
+      }
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #003399;
+      }
+    }
+    .error-message {
+      color: red;
+      margin-top: 10px;
+    }   
+  }
+   
+
+  

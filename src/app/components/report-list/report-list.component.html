@@ -1,0 +1,6 @@
+<div *ngFor="let report of reports$ | async">
+    <h3>{{ report.description }}</h3>
+    <p><strong>Location:</strong> {{ report.location }}</p>
+    <p><strong>Status:</strong> {{ report.status }}</p>
+  </div>
+  
